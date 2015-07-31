@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{f660a7a0-611a-4106-8afb-4733c0998f5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Sounds">
+      <UniqueIdentifier>{5a84781f-4888-4a9f-9400-8636c1262505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{04fcadfc-a5de-4b6c-91d6-959a3d6748bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\iphonehd5">
+      <UniqueIdentifier>{c20cd5d4-c357-4134-be0b-5e334368171b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\iphonehd">
+      <UniqueIdentifier>{999b9628-d5f0-43a9-897b-205ac225cf19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\iphone">
+      <UniqueIdentifier>{cd49f9d9-bb60-4e6e-bc10-63021431d783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ipadhd">
+      <UniqueIdentifier>{0b4785b5-4177-4fa9-819e-ce07097fd6b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\ipad">
+      <UniqueIdentifier>{8ec34b58-15c4-41dc-992a-42c1488a9a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{41429451-f000-45fd-a42a-99d64569d3d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SplashScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameOverScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainMenuScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Pipe.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bird.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SplashScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameOverScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainMenuScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Definitions.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Pipe.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bird.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\res\HelloWorld.png">
+      <Filter>Resources\res</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Background.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Ball.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Menu Button Clicked.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Menu Button.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Pipe.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Play Button Clicked.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Play Button.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Retry Button Clicked.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Retry Button.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Splash Screen.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Title.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd5\HelloWorld.png">
+      <Filter>Resources\iphonehd5</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Background.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Ball - Copy.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Ball.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Menu Button Clicked.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Menu Button.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Pipe.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Play Button Clicked.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Play Button.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Retry Button Clicked.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Retry Button.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Splash Screen.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Title.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Background.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Ball.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Menu Button Clicked.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Menu Button.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Pipe.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Play Button Clicked.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Play Button.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Retry Button Clicked.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Retry Button.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Splash Screen.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Title.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipad\HelloWorld.png">
+      <Filter>Resources\ipad</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\Sounds\Wing.mp3">
+      <Filter>Resources\Sounds</Filter>
+    </Media>
+    <Media Include="..\Resources\Sounds\Hit.mp3">
+      <Filter>Resources\Sounds</Filter>
+    </Media>
+    <Media Include="..\Resources\Sounds\Point.mp3">
+      <Filter>Resources\Sounds</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\res\MainScene.csb">
+      <Filter>Resources\res</Filter>
+    </None>
+    <None Include="..\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+    <Font Include="..\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
