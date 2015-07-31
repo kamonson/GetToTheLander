@@ -1,6 +1,6 @@
 #ifndef __DEFINITIONS_H__
 #define __DEFINITIONS_H__
-
+//For easy changes to game
 #define DISPLAY_TIME_SPLASH_SCENE 3
 #define TRANSITION_TIME 0.5
 #define PIPE_SPAWN_FREQUENCY 0.005
