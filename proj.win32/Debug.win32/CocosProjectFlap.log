@@ -1,8 +1,8 @@
-﻿Build started 7/30/2015 6:53:00 PM.
+﻿Build started 8/4/2015 2:46:00 PM.
      1>Project "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\CocosProjectFlap.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug.win32\) contains files shared from another project (CocosProjectFlap.vcxproj, Flap.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.6\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\\" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\Bird.cpp ..\Classes\GameOverScene.cpp ..\Classes\GameScene.cpp ..\Classes\MainMenuScene.cpp ..\Classes\Pipe.cpp ..\Classes\SplashScene.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.6\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\\" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\Bird.cpp ..\Classes\GameOverScene.cpp ..\Classes\GameScene.cpp ..\Classes\MainMenuScene.cpp ..\Classes\Mights.cpp ..\Classes\Pipe.cpp ..\Classes\SplashScene.cpp
          Bird.cpp
          GameOverScene.cpp
      1>c:\users\kyle\documents\github\gettothelander\classes\gameoverscene.cpp(62): warning C4018: '>' : signed/unsigned mismatch
@@ -12,10 +12,14 @@
                  c:\cocos\frameworks\cocos2d-x-3.6\cocos\2d\cclabelttf.h(83) : see declaration of 'cocos2d::LabelTTF::create'
          GameScene.cpp
          MainMenuScene.cpp
+     1>c:\users\kyle\documents\github\gettothelander\classes\gamescene.cpp(160): warning C4305: 'argument' : truncation from 'double' to 'float'
+         Mights.cpp
          Pipe.cpp
-         SplashScene.cpp
+     1>c:\users\kyle\documents\github\gettothelander\classes\mights.cpp(28): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\kyle\documents\github\gettothelander\classes\mights.cpp(31): warning C4305: '=' : truncation from 'double' to 'float'
      1>c:\users\kyle\documents\github\gettothelander\classes\pipe.cpp(28): warning C4305: '=' : truncation from 'double' to 'float'
      1>c:\users\kyle\documents\github\gettothelander\classes\pipe.cpp(31): warning C4305: '=' : truncation from 'double' to 'float'
+         SplashScene.cpp
        PreLinkEvent:
          if not exist "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\" mkdir "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\"
          xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.6\prebuilt\win32\*.*" "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\"
@@ -30,6 +34,7 @@
          Debug.win32\GameOverScene.obj
          Debug.win32\GameScene.obj
          Debug.win32\MainMenuScene.obj
+         Debug.win32\Mights.obj
          Debug.win32\Pipe.obj
          Debug.win32\SplashScene.obj
          Debug.win32\main.obj
@@ -38,4 +43,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:28.10
+Time Elapsed 00:00:54.60

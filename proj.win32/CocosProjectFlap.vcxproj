@@ -141,6 +141,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\GameOverScene.cpp" />
     <ClCompile Include="..\Classes\GameScene.cpp" />
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
+    <ClCompile Include="..\Classes\Mights.cpp" />
     <ClCompile Include="..\Classes\Pipe.cpp" />
     <ClCompile Include="..\Classes\SplashScene.cpp" />
     <ClCompile Include="main.cpp" />
@@ -152,6 +153,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameOverScene.h" />
     <ClInclude Include="..\Classes\GameScene.h" />
     <ClInclude Include="..\Classes\MainMenuScene.h" />
+    <ClInclude Include="..\Classes\Mights.h" />
     <ClInclude Include="..\Classes\Pipe.h" />
     <ClInclude Include="..\Classes\SplashScene.h" />
     <ClInclude Include="main.h" />
@@ -162,8 +164,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\HelloWorld.png" />
     <Image Include="..\Resources\ipadhd\Background.png" />
     <Image Include="..\Resources\ipadhd\Ball.png" />
+    <Image Include="..\Resources\ipadhd\GameBackground.png" />
     <Image Include="..\Resources\ipadhd\Menu Button Clicked.png" />
     <Image Include="..\Resources\ipadhd\Menu Button.png" />
+    <Image Include="..\Resources\ipadhd\MightsAndTights.png" />
     <Image Include="..\Resources\ipadhd\Pipe.png" />
     <Image Include="..\Resources\ipadhd\Play Button Clicked.png" />
     <Image Include="..\Resources\ipadhd\Play Button.png" />
@@ -175,8 +179,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\iphonehd5\HelloWorld.png" />
     <Image Include="..\Resources\iphonehd\Background.png" />
     <Image Include="..\Resources\iphonehd\Ball.png" />
+    <Image Include="..\Resources\iphonehd\GameBackground.png" />
     <Image Include="..\Resources\iphonehd\Menu Button Clicked.png" />
     <Image Include="..\Resources\iphonehd\Menu Button.png" />
+    <Image Include="..\Resources\iphonehd\MightsAndTights.png" />
     <Image Include="..\Resources\iphonehd\Pipe.png" />
     <Image Include="..\Resources\iphonehd\Play Button Clicked.png" />
     <Image Include="..\Resources\iphonehd\Play Button.png" />
@@ -187,8 +193,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\iphone\Background.png" />
     <Image Include="..\Resources\iphone\Ball - Copy.png" />
     <Image Include="..\Resources\iphone\Ball.png" />
+    <Image Include="..\Resources\iphone\GameBackground.png" />
     <Image Include="..\Resources\iphone\Menu Button Clicked.png" />
     <Image Include="..\Resources\iphone\Menu Button.png" />
+    <Image Include="..\Resources\iphone\MightsAndTights.png" />
     <Image Include="..\Resources\iphone\Pipe.png" />
     <Image Include="..\Resources\iphone\Play Button Clicked.png" />
     <Image Include="..\Resources\iphone\Play Button.png" />

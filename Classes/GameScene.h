@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "Pipe.h"
+#include"Mights.h"
 #include "Bird.h"
 
 class GameScene : public cocos2d::Layer
@@ -22,6 +23,7 @@ private:
 		sceneWorld = world;
 	}
 	void SpawnPipe(float dt);
+	void SpawnMights(float dt);
 		cocos2d::PhysicsWorld *sceneWorld;
 		
 		//declare contact
@@ -34,6 +36,7 @@ private:
 		void update(float dt);
 
 		Pipe pipe;
+		Mights mights;
 
 		//initialize with pointer because it does not have defualt constructor, use constructor passing a layer
 		Bird *bird;

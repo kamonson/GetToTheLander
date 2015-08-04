@@ -356,7 +356,8 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/GameScene.o: \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCString.h \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
- jni/../../Classes/Pipe.h jni/../../Classes/Bird.h \
+ jni/../../Classes/Pipe.h jni/../../Classes/Mights.h \
+ jni/../../Classes/Bird.h \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/audio/android/../include/Export.h \
  jni/../../Classes/Definitions.h jni/../../Classes/GameOverScene.h
@@ -1076,6 +1077,8 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/.
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
 jni/../../Classes/Pipe.h:
+
+jni/../../Classes/Mights.h:
 
 jni/../../Classes/Bird.h:
 

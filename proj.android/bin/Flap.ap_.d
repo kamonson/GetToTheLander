@@ -22,8 +22,10 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\fonts\Marker F
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipad\HelloWorld.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Background.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Ball.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\GameBackground.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Menu Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Menu Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\MightsAndTights.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Pipe.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Play Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Play Button.png \
@@ -34,8 +36,10 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Title.p
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Background.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Ball - Copy.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Ball.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\GameBackground.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Menu Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Menu Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\MightsAndTights.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Pipe.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Play Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Play Button.png \
@@ -45,8 +49,10 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Splash 
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Title.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Background.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Ball.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\GameBackground.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Menu Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Menu Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\MightsAndTights.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Pipe.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Play Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Play Button.png \

@@ -60,6 +60,9 @@
     <ClCompile Include="..\Classes\Bird.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Mights.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -87,6 +90,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Bird.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Mights.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
@@ -210,6 +216,24 @@
     </Image>
     <Image Include="..\Resources\ipad\HelloWorld.png">
       <Filter>Resources\ipad</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\MightsAndTights.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\MightsAndTights.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\MightsAndTights.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\GameBackground.png">
+      <Filter>Resources\ipadhd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\GameBackground.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\GameBackground.png">
+      <Filter>Resources\iphonehd</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
