@@ -10,29 +10,29 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{f660a7a0-611a-4106-8afb-4733c0998f5a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resources\Sounds">
-      <UniqueIdentifier>{5a84781f-4888-4a9f-9400-8636c1262505}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resources\res">
       <UniqueIdentifier>{04fcadfc-a5de-4b6c-91d6-959a3d6748bc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resources\iphonehd5">
-      <UniqueIdentifier>{c20cd5d4-c357-4134-be0b-5e334368171b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resources\iphonehd">
-      <UniqueIdentifier>{999b9628-d5f0-43a9-897b-205ac225cf19}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resources\iphone">
-      <UniqueIdentifier>{cd49f9d9-bb60-4e6e-bc10-63021431d783}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resources\ipadhd">
-      <UniqueIdentifier>{0b4785b5-4177-4fa9-819e-ce07097fd6b3}</UniqueIdentifier>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{41429451-f000-45fd-a42a-99d64569d3d0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\ipad">
       <UniqueIdentifier>{8ec34b58-15c4-41dc-992a-42c1488a9a5f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resources\fonts">
-      <UniqueIdentifier>{41429451-f000-45fd-a42a-99d64569d3d0}</UniqueIdentifier>
+    <Filter Include="Resources\ipadhd">
+      <UniqueIdentifier>{0b4785b5-4177-4fa9-819e-ce07097fd6b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\iphone">
+      <UniqueIdentifier>{cd49f9d9-bb60-4e6e-bc10-63021431d783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\iphonehd">
+      <UniqueIdentifier>{999b9628-d5f0-43a9-897b-205ac225cf19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\iphonehd5">
+      <UniqueIdentifier>{c20cd5d4-c357-4134-be0b-5e334368171b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Sounds">
+      <UniqueIdentifier>{5a84781f-4888-4a9f-9400-8636c1262505}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +246,9 @@
     <Media Include="..\Resources\Sounds\Point.mp3">
       <Filter>Resources\Sounds</Filter>
     </Media>
+    <Media Include="..\Resources\Sounds\BKGMusic.mp3">
+      <Filter>Resources\Sounds</Filter>
+    </Media>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\res\MainScene.csb">
@@ -262,5 +265,8 @@
     <Font Include="..\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Get To The Lander.rc" />
   </ItemGroup>
 </Project>

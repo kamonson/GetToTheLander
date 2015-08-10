@@ -63,6 +63,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Title
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd5\HelloWorld.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\res\HelloWorld.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\res\MainScene.csb \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\Sounds\BKGMusic.mp3 \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\Sounds\Hit.mp3 \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\Sounds\Point.mp3 \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\Sounds\Wing.mp3 \

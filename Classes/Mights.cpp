@@ -16,6 +16,12 @@ void Mights::SpawnMights(cocos2d::Layer *layer)
 
 	//Create mights
 
+//for testing on pc C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\
+
+	//auto topMights = Sprite::create("C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\MightsAndTights.png");
+	//auto bottomMights = Sprite::create("C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\MightsAndTights.png");
+
+//for running on platform
 	auto topMights = Sprite::create("MightsAndTights.png");
 	auto bottomMights = Sprite::create("MightsAndTights.png");
 

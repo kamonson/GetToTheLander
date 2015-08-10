@@ -36,8 +36,11 @@ bool GameScene::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/BKGMusic.mp3",true);
 	//create a background for game
+	//for testing on pc
+	//auto backgroundSprite = Sprite::create("C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\GameBackground.png");
+	//for platform:
 	auto backgroundSprite = Sprite::create("GameBackground.png");
 	backgroundSprite->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 	this->addChild(backgroundSprite);
@@ -108,6 +111,8 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
 		//output score on death
 		// CCLOG("SCORE: %i", score); no need to write to output, score in game
+		//end bkg music
+		CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
 	}
 	else if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
 	{ 
@@ -116,6 +121,7 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 		score ++;
 		__String *tempScore = __String::createWithFormat("%i", score);
 		scoreLabel->setString(tempScore->getCString());
+		
 	}
 	return true;
 }

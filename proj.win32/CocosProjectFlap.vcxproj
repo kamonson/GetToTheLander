@@ -207,6 +207,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\res\HelloWorld.png" />
   </ItemGroup>
   <ItemGroup>
+    <Media Include="..\Resources\Sounds\BKGMusic.mp3" />
     <Media Include="..\Resources\Sounds\Hit.mp3" />
     <Media Include="..\Resources\Sounds\Point.mp3" />
     <Media Include="..\Resources\Sounds\Wing.mp3" />
@@ -218,6 +219,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <Font Include="..\Resources\fonts\arial.ttf" />
     <Font Include="..\Resources\fonts\Marker Felt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Get To The Lander.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
