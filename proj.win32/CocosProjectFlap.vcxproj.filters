@@ -63,6 +63,9 @@
     <ClCompile Include="..\Classes\Mights.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Rocks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -93,6 +96,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Mights.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Rocks.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
@@ -234,6 +240,15 @@
     </Image>
     <Image Include="..\Resources\iphonehd\GameBackground.png">
       <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\iphone\Rocks.png">
+      <Filter>Resources\iphone</Filter>
+    </Image>
+    <Image Include="..\Resources\iphonehd\Rocks.png">
+      <Filter>Resources\iphonehd</Filter>
+    </Image>
+    <Image Include="..\Resources\ipadhd\Rocks.png">
+      <Filter>Resources\ipadhd</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

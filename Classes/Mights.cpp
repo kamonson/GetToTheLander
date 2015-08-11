@@ -25,8 +25,8 @@ void Mights::SpawnMights(cocos2d::Layer *layer)
 	auto topMights = Sprite::create("MightsAndTights.png");
 	auto bottomMights = Sprite::create("MightsAndTights.png");
 
-	auto topMightsBody = PhysicsBody::createBox(topMights->getContentSize());
-	auto bottomMightsBody = PhysicsBody::createBox(bottomMights->getContentSize());
+	//auto topMightsBody = PhysicsBody::createBox(topMights->getContentSize());
+	//auto bottomMightsBody = PhysicsBody::createBox(bottomMights->getContentSize());
 
 	auto random = CCRANDOM_0_1();
 
@@ -39,16 +39,16 @@ void Mights::SpawnMights(cocos2d::Layer *layer)
 
 	auto topMightsPosition = (random * visibleSize.height) + (topMights->getContentSize().height / 2);
 
-	topMightsBody->setDynamic(false);
-	bottomMightsBody->setDynamic(false);
+	//topMightsBody->setDynamic(false);
+	//bottomMightsBody->setDynamic(false);
 
-	topMightsBody->setCollisionBitmask(BKG_COLLISION_BITMASK);
-	bottomMightsBody->setCollisionBitmask(BKG_COLLISION_BITMASK);
-	topMightsBody->setContactTestBitmask(false);
-	bottomMightsBody->setContactTestBitmask(false);
+	//topMightsBody->setCollisionBitmask(BKG_COLLISION_BITMASK);
+	//bottomMightsBody->setCollisionBitmask(BKG_COLLISION_BITMASK);
+	//topMightsBody->setContactTestBitmask(false);
+	//bottomMightsBody->setContactTestBitmask(false);
 
-	topMights->setPhysicsBody(topMightsBody);
-	bottomMights->setPhysicsBody(bottomMightsBody);
+	//topMights->setPhysicsBody(topMightsBody);
+	//bottomMights->setPhysicsBody(bottomMightsBody);
 
 	//set bottom mights to top and account for gap size
 	topMights->setPosition(Point(visibleSize.width + topMights->getContentSize().width + origin.x, topMightsPosition));

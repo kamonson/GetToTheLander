@@ -9,7 +9,7 @@ Scene* GameScene::createScene()
     // 'scene' is an autorelease object
     auto scene = Scene::createWithPhysics();
 	//let see colision
-	//scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+	scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 	//make gravity
 	scene->getPhysicsWorld()->setGravity(Vect(0, 0));
     
@@ -45,23 +45,28 @@ bool GameScene::init()
 	backgroundSprite->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 	this->addChild(backgroundSprite);
 	
-	auto edgeBody = PhysicsBody::createEdgeBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT, 3);
-	edgeBody->setCollisionBitmask(OBSTACLE_COLLISION_BITMASK);
+	auto edgeBody = PhysicsBody::createBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT);
+	edgeBody->setCollisionBitmask(EDGE_COLLISION_BITMASK);
+	edgeBody->setDynamic(true);
 	edgeBody->setContactTestBitmask(true);
 
 	auto edgeNode = Node::create();
-	edgeNode->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
+	edgeNode->setPosition(Point(-100, visibleSize.height / 2 + origin.y));
 	this->addChild(backgroundSprite);
 
 	edgeNode->setPhysicsBody(edgeBody);
 
 	this->addChild(edgeNode);
 
+	//spawn Rocks based on screen size
+	this->schedule(schedule_selector(GameScene::SpawnRocks), ROCKS_SPAWN_FREQUENCY * visibleSize.width);
+	
 	//spawn pipes based on screen size
 	this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width );
 
 	//spawn Mights based on screen size
 	this->schedule(schedule_selector(GameScene::SpawnMights), MIGHTS_SPAWN_FREQUENCY * visibleSize.width);
+
 
 	//initialize bird
 	bird = new Bird(this);
@@ -105,7 +110,7 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 	PhysicsBody *b = contact.getShapeB()->getBody();
 
 	//if something colides with something else
-	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask())){
+	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == a->getCollisionBitmask()) /*|| (BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && EDGE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && EDGE_COLLISION_BITMASK == a->getCollisionBitmask())*/){
 		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Hit.mp3");
 		auto scene = GameOverScene::createScene( score);
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
@@ -120,8 +125,13 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Point.mp3");
 		score ++;
 		__String *tempScore = __String::createWithFormat("%i", score);
-		scoreLabel->setString(tempScore->getCString());
-		
+		scoreLabel->setString(tempScore->getCString());	
+	}
+	else if ((EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask())){
+		//remove sprites as they get near edge--fine tune the number 100 is close
+		if (b->getNode()->getPositionX() < 100){
+			b->getNode()->removeFromParent();
+		}
 	}
 	return true;
 }
@@ -130,6 +140,11 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 //make Mights
 void GameScene::SpawnMights(float dt){
 	mights.SpawnMights(this);
+}
+
+//make Rocks
+void GameScene::SpawnRocks(float dt){
+	rocks.SpawnRocks(this);
 }
 
 ////response to contact with obstacle

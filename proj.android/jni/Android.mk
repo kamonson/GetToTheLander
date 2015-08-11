@@ -20,6 +20,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
 				   ../../Classes/Pipe.cpp \
 				   ../../Classes/Bird.cpp \
 				   ../../Classes/GameOverScene.cpp \
+				   ../../Classes/Rocks.cpp \
 
 				   
 

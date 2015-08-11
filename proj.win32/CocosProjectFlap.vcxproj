@@ -143,6 +143,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\MainMenuScene.cpp" />
     <ClCompile Include="..\Classes\Mights.cpp" />
     <ClCompile Include="..\Classes\Pipe.cpp" />
+    <ClCompile Include="..\Classes\Rocks.cpp" />
     <ClCompile Include="..\Classes\SplashScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -155,6 +156,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\MainMenuScene.h" />
     <ClInclude Include="..\Classes\Mights.h" />
     <ClInclude Include="..\Classes\Pipe.h" />
+    <ClInclude Include="..\Classes\Rocks.h" />
     <ClInclude Include="..\Classes\SplashScene.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
@@ -173,6 +175,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\ipadhd\Play Button.png" />
     <Image Include="..\Resources\ipadhd\Retry Button Clicked.png" />
     <Image Include="..\Resources\ipadhd\Retry Button.png" />
+    <Image Include="..\Resources\ipadhd\Rocks.png" />
     <Image Include="..\Resources\ipadhd\Splash Screen.png" />
     <Image Include="..\Resources\ipadhd\Title.png" />
     <Image Include="..\Resources\ipad\HelloWorld.png" />
@@ -188,6 +191,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\iphonehd\Play Button.png" />
     <Image Include="..\Resources\iphonehd\Retry Button Clicked.png" />
     <Image Include="..\Resources\iphonehd\Retry Button.png" />
+    <Image Include="..\Resources\iphonehd\Rocks.png" />
     <Image Include="..\Resources\iphonehd\Splash Screen.png" />
     <Image Include="..\Resources\iphonehd\Title.png" />
     <Image Include="..\Resources\iphone\Background.png" />
@@ -202,6 +206,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <Image Include="..\Resources\iphone\Play Button.png" />
     <Image Include="..\Resources\iphone\Retry Button Clicked.png" />
     <Image Include="..\Resources\iphone\Retry Button.png" />
+    <Image Include="..\Resources\iphone\Rocks.png" />
     <Image Include="..\Resources\iphone\Splash Screen.png" />
     <Image Include="..\Resources\iphone\Title.png" />
     <Image Include="..\Resources\res\HelloWorld.png" />

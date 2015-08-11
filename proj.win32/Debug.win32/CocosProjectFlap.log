@@ -1,8 +1,11 @@
-﻿Build started 8/9/2015 9:24:01 PM.
+﻿Build started 8/11/2015 1:34:36 AM.
      1>Project "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\CocosProjectFlap.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug.win32\) contains files shared from another project (CocosProjectFlap.vcxproj, Flap.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-     1>ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug.win32\Get To The Lander.res" "Get To The Lander.rc" 
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.6\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\\" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\Mights.cpp
+         Mights.cpp
+     1>c:\users\kyle\documents\github\gettothelander\classes\mights.cpp(34): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\kyle\documents\github\gettothelander\classes\mights.cpp(37): warning C4305: '=' : truncation from 'double' to 'float'
        PreLinkEvent:
          if not exist "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\" mkdir "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\"
          xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.6\prebuilt\win32\*.*" "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\"
@@ -20,6 +23,7 @@
          Debug.win32\MainMenuScene.obj
          Debug.win32\Mights.obj
          Debug.win32\Pipe.obj
+         Debug.win32\Rocks.obj
          Debug.win32\SplashScene.obj
          Debug.win32\main.obj
          CocosProjectFlap.vcxproj -> C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.exe
@@ -27,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.03
+Time Elapsed 00:00:19.57

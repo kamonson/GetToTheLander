@@ -31,6 +31,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Play Bu
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Play Button.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Retry Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Retry Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Rocks.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Splash Screen.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Title.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Background.png \
@@ -45,6 +46,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Play Bu
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Play Button.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Retry Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Retry Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Rocks.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Splash Screen.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Title.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Background.png \
@@ -58,6 +60,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Play 
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Play Button.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Retry Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Retry Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Rocks.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Splash Screen.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Title.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd5\HelloWorld.png \

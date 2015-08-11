@@ -4,14 +4,17 @@
 #include "cocos2d.h"
 #include "Pipe.h"
 #include"Mights.h"
+#include"Rocks.h"
 #include "Bird.h"
+#include "chipmunk.h"
+
 
 class GameScene : public cocos2d::Layer
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
-
+	void initPhysics();
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();
     
@@ -24,7 +27,10 @@ private:
 	}
 	void SpawnPipe(float dt);
 	void SpawnMights(float dt);
+	void SpawnRocks(float dt);
 		cocos2d::PhysicsWorld *sceneWorld;
+
+		cpSpace* m_pSpace;
 		
 		//declare contact
 		bool onContactBegin(cocos2d::PhysicsContact &contact);
@@ -37,6 +43,7 @@ private:
 
 		Pipe pipe;
 		Mights mights;
+		Rocks rocks;
 
 		//initialize with pointer because it does not have defualt constructor, use constructor passing a layer
 		Bird *bird;
