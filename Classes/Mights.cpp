@@ -57,8 +57,8 @@ void Mights::SpawnMights(cocos2d::Layer *layer)
 	layer->addChild(topMights);
 	layer->addChild(bottomMights);
 
-	auto topMightsAction = MoveBy::create(MIGHTS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
-	auto bottomMightsAction = MoveBy::create(MIGHTS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
+	auto topMightsAction = MoveBy::create(UMIGHTS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
+	auto bottomMightsAction = MoveBy::create(LMIGHTS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
 
 	topMights->runAction(topMightsAction);
 	bottomMights->runAction(bottomMightsAction);

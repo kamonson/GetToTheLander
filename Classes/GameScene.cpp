@@ -6,37 +6,37 @@ USING_NS_CC;
 
 Scene* GameScene::createScene()
 {
-    // 'scene' is an autorelease object
-    auto scene = Scene::createWithPhysics();
+	// 'scene' is an autorelease object
+	auto scene = Scene::createWithPhysics();
 	//let see colision
-	scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+	//scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
 	//make gravity
 	scene->getPhysicsWorld()->setGravity(Vect(0, 0));
-    
-    // 'layer' is an autorelease object
-    auto layer = GameScene::create();
+
+	// 'layer' is an autorelease object
+	auto layer = GameScene::create();
 	layer->SetPhysicsWorld(scene->getPhysicsWorld());
 
-    // add layer as a child to scene
-    scene->addChild(layer);
+	// add layer as a child to scene
+	scene->addChild(layer);
 
-    // return the scene
-    return scene;
+	// return the scene
+	return scene;
 }
 
 // on "init" you need to initialize your instance
 bool GameScene::init()
 {
-    //////////////////////////////
-    // 1. super init first
-    if ( !Layer::init() )
-    {
-        return false;
-    }
-    
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/BKGMusic.mp3",true);
+	//////////////////////////////
+	// 1. super init first
+	if (!Layer::init())
+	{
+		return false;
+	}
+
+	Size visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Sounds/BKGMusic.mp3", true);
 	//create a background for game
 	//for testing on pc
 	//auto backgroundSprite = Sprite::create("C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\GameBackground.png");
@@ -44,14 +44,14 @@ bool GameScene::init()
 	auto backgroundSprite = Sprite::create("GameBackground.png");
 	backgroundSprite->setPosition(Point(visibleSize.width / 2 + origin.x, visibleSize.height / 2 + origin.y));
 	this->addChild(backgroundSprite);
-	
+
+	//create body to colide and remove objects from going off screen
 	auto edgeBody = PhysicsBody::createBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT);
 	edgeBody->setCollisionBitmask(EDGE_COLLISION_BITMASK);
 	edgeBody->setDynamic(true);
 	edgeBody->setContactTestBitmask(true);
-
 	auto edgeNode = Node::create();
-	edgeNode->setPosition(Point(-100, visibleSize.height / 2 + origin.y));
+	edgeNode->setPosition(Point((0 - visibleSize.width / 2) - (Sprite::create("Pipe.png")->getContentSize().width), visibleSize.height / 2 + origin.y));
 	this->addChild(backgroundSprite);
 
 	edgeNode->setPhysicsBody(edgeBody);
@@ -60,9 +60,9 @@ bool GameScene::init()
 
 	//spawn Rocks based on screen size
 	this->schedule(schedule_selector(GameScene::SpawnRocks), ROCKS_SPAWN_FREQUENCY * visibleSize.width);
-	
+
 	//spawn pipes based on screen size
-	this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width );
+	this->schedule(schedule_selector(GameScene::SpawnPipe), PIPE_SPAWN_FREQUENCY * visibleSize.width);
 
 	//spawn Mights based on screen size
 	this->schedule(schedule_selector(GameScene::SpawnMights), MIGHTS_SPAWN_FREQUENCY * visibleSize.width);
@@ -96,7 +96,7 @@ bool GameScene::init()
 
 	this->scheduleUpdate();
 
-    return true;
+	return true;
 }
 
 //make pipes
@@ -112,7 +112,7 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 	//if something colides with something else
 	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == a->getCollisionBitmask()) /*|| (BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && EDGE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && EDGE_COLLISION_BITMASK == a->getCollisionBitmask())*/){
 		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Hit.mp3");
-		auto scene = GameOverScene::createScene( score);
+		auto scene = GameOverScene::createScene(score);
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
 		//output score on death
 		// CCLOG("SCORE: %i", score); no need to write to output, score in game
@@ -120,17 +120,25 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 		CocosDenshion::SimpleAudioEngine::getInstance()->stopBackgroundMusic();
 	}
 	else if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
-	{ 
-	//	CCLOG("Point Scored");no longer needed to write to output
+	{
+		//	CCLOG("Point Scored");no longer needed to write to output
+		if (a->getCollisionBitmask() == POINT_COLLISION_BITMASK)
+		{
+			a->getNode()->removeFromParent();
+		}
+		else b->getNode()->removeFromParent();
 		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Point.mp3");
-		score ++;
+		score++;
 		__String *tempScore = __String::createWithFormat("%i", score);
-		scoreLabel->setString(tempScore->getCString());	
+		scoreLabel->setString(tempScore->getCString());
 	}
-	else if ((EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask())){
-		//remove sprites as they get near edge--fine tune the number 100 is close
-		if (b->getNode()->getPositionX() < 100){
+	else if ((EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == b->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == a->getCollisionBitmask()) || (POINT_COLLISION_BITMASK == a->getCollisionBitmask() && EDGE_COLLISION_BITMASK == b->getCollisionBitmask()) || (POINT_COLLISION_BITMASK == b->getCollisionBitmask() && EDGE_COLLISION_BITMASK == a->getCollisionBitmask())){
+		//remove sprites as they remove from screen
+		if (a->getCollisionBitmask() == EDGE_COLLISION_BITMASK){
 			b->getNode()->removeFromParent();
+		}
+		else{
+			a->getNode()->removeFromParent();
 		}
 	}
 	return true;
