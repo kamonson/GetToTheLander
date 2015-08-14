@@ -3,7 +3,6 @@
 
 USING_NS_CC;
 
-//set pipe to visible screen size
 Bird::Bird(cocos2d::Layer *layer){
 	visibleSize = Director::getInstance()->getVisibleSize();
 	origin = Director::getInstance()->getVisibleOrigin();
@@ -32,6 +31,7 @@ void Bird::Fall(){
 		//eliminate motion from contact...may delete
 		flappyBird->setPositionX(visibleSize.width / 2 + origin.x);
 		flappyBird->setPositionY(flappyBird->getPositionY() - (BIRD_FALLING_SPEED * visibleSize.height));
+		y = flappyBird->getPositionY();
 		
 	}
 	else{
@@ -41,3 +41,11 @@ void Bird::Fall(){
 		
 	}
 }
+
+float Bird::getPosX(){
+	return flappyBird->getPositionX();
+};
+
+float Bird::getPosY(){
+	return y;
+};

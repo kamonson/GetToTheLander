@@ -53,6 +53,8 @@ private:
 
 		cocos2d::Label *scoreLabel;
 
+		bool frstContact = false;
+
 };
 
 #endif // __GAME_SCENE_H__

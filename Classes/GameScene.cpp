@@ -46,17 +46,23 @@ bool GameScene::init()
 	this->addChild(backgroundSprite);
 
 	//create body to colide and remove objects from going off screen
+	auto alienSize = Sprite::create("Alien.png");
 	auto edgeBody = PhysicsBody::createBox(visibleSize, PHYSICSBODY_MATERIAL_DEFAULT);
 	edgeBody->setCollisionBitmask(EDGE_COLLISION_BITMASK);
 	edgeBody->setDynamic(true);
 	edgeBody->setContactTestBitmask(true);
 	auto edgeNode = Node::create();
-	edgeNode->setPosition(Point((0 - visibleSize.width / 2) - (Sprite::create("Pipe.png")->getContentSize().width), visibleSize.height / 2 + origin.y));
+	edgeNode->setPosition(Point((0 - visibleSize.width / 2 + (alienSize->getContentSize().width / 2)) /*- (Sprite::create("Pipe.png")->getContentSize().width)*/, visibleSize.height / 2 + origin.y));
 	this->addChild(backgroundSprite);
 
 	edgeNode->setPhysicsBody(edgeBody);
 
 	this->addChild(edgeNode);
+
+	auto alienSprite = Sprite::create("Alien.png");
+	alienSprite->setPosition(Point(origin.x, visibleSize.height / 3 + origin.y));
+	this->addChild(alienSprite, 100);
+
 
 	//spawn Rocks based on screen size
 	this->schedule(schedule_selector(GameScene::SpawnRocks), ROCKS_SPAWN_FREQUENCY * visibleSize.width);
@@ -112,6 +118,12 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 	//if something colides with something else
 	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == a->getCollisionBitmask()) /*|| (BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && EDGE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && EDGE_COLLISION_BITMASK == a->getCollisionBitmask())*/){
 		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Hit.mp3");
+
+		CCParticleSystemQuad* p = CCParticleSystemQuad::create("burn.plist");
+		p->setPosition(bird->getPosX(), bird->getPosY());
+		this->addChild(p);
+
+
 		auto scene = GameOverScene::createScene(score);
 		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
 		//output score on death
@@ -126,77 +138,118 @@ bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
 		{
 			a->getNode()->removeFromParent();
 		}
-		else b->getNode()->removeFromParent();
-		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Point.mp3");
-		score++;
-		__String *tempScore = __String::createWithFormat("%i", score);
-		scoreLabel->setString(tempScore->getCString());
+		else {
+			b->getNode()->removeFromParent();
+
+			CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Point.mp3");
+			score++;
+			__String *tempScore = __String::createWithFormat("%i", score);
+			scoreLabel->setString(tempScore->getCString());
+		}
 	}
 	else if ((EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == a->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == b->getCollisionBitmask()) || (EDGE_COLLISION_BITMASK == b->getCollisionBitmask() && ROCKS_COLLISION_BITMASK == a->getCollisionBitmask()) || (POINT_COLLISION_BITMASK == a->getCollisionBitmask() && EDGE_COLLISION_BITMASK == b->getCollisionBitmask()) || (POINT_COLLISION_BITMASK == b->getCollisionBitmask() && EDGE_COLLISION_BITMASK == a->getCollisionBitmask())){
 		//remove sprites as they remove from screen
 		if (a->getCollisionBitmask() == EDGE_COLLISION_BITMASK){
+
+			CCParticleSystemQuad* p = CCParticleSystemQuad::create("debris_2.plist");
+			p->setPosition(b->getNode()->getPosition());
+			this->addChild(p);
+
+			//if (frstContact == false){
+			//	auto alienSize = Sprite::create("Alien.png");
+			//	CCParticleSystemQuad* p = CCParticleSystemQuad::create("debris.plist");
+			//	p->setPosition(b->getNode()->getPosition() + alienSize->getContentSize() / 2);
+			//	this->addChild(p);
+			//	frstContact = true;
+			//}
+
 			b->getNode()->removeFromParent();
+
 		}
 		else{
+			CCParticleSystemQuad* p = CCParticleSystemQuad::create("debris_2.plist");
+			p->setPosition(b->getNode()->getPosition());
+			this->addChild(p);
+
+			//if (frstContact == false){
+			//	auto alienSize = Sprite::create("Alien.png");
+			//	CCParticleSystemQuad* p = CCParticleSystemQuad::create("debris.plist");
+			//	p->setPosition(b->getNode()->getPosition() + alienSize->getContentSize() / 2);
+			//	this->addChild(p);
+			//	frstContact = true;
+			//}
+
 			a->getNode()->removeFromParent();
 		}
 	}
 	return true;
-}
+	}
 
 
-//make Mights
-void GameScene::SpawnMights(float dt){
-	mights.SpawnMights(this);
-}
+	//make Mights
+	void GameScene::SpawnMights(float dt){
+		mights.SpawnMights(this);
+	}
 
-//make Rocks
-void GameScene::SpawnRocks(float dt){
-	rocks.SpawnRocks(this);
-}
+	//make Rocks
+	void GameScene::SpawnRocks(float dt){
+		rocks.SpawnRocks(this);
+	}
 
-////response to contact with obstacle
-//bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
-//	PhysicsBody *a = contact.getShapeA()->getBody();
-//	PhysicsBody *b = contact.getShapeB()->getBody();
-//
-//	//if something colides with something else
-//	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask())){
-//		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Hit.mp3");
-//		auto scene = GameOverScene::createScene(score);
-//		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
-//		//output score on death
-//		// CCLOG("SCORE: %i", score); no need to write to output, score in game
-//	}
-//	else if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
-//	{
-//		//	CCLOG("Point Scored");no longer needed to write to output
-//		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Point.mp3");
-//		score++;
-//		__String *tempScore = __String::createWithFormat("%i", score);
-//		scoreLabel->setString(tempScore->getCString());
-//	}
-//	return true;
-//}
+	////response to contact with obstacle
+	//bool GameScene::onContactBegin(cocos2d::PhysicsContact &contact){
+	//	PhysicsBody *a = contact.getShapeA()->getBody();
+	//	PhysicsBody *b = contact.getShapeB()->getBody();
+	//
+	//	//if something colides with something else
+	//	if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && OBSTACLE_COLLISION_BITMASK == a->getCollisionBitmask())){
+	//		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Hit.mp3");
+	//		auto scene = GameOverScene::createScene(score);
+	//		Director::getInstance()->replaceScene(TransitionFade::create(TRANSITION_TIME, scene));
+	//		//output score on death
+	//		// CCLOG("SCORE: %i", score); no need to write to output, score in game
+	//	}
+	//	else if ((BIRD_COLLISION_BITMASK == a->getCollisionBitmask() && POINT_COLLISION_BITMASK == b->getCollisionBitmask()) || (BIRD_COLLISION_BITMASK == b->getCollisionBitmask() && POINT_COLLISION_BITMASK == a->getCollisionBitmask()))
+	//	{
+	//		//	CCLOG("Point Scored");no longer needed to write to output
+	//		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Point.mp3");
+	//		score++;
+	//		__String *tempScore = __String::createWithFormat("%i", score);
+	//		scoreLabel->setString(tempScore->getCString());
+	//	}
+	//	return true;
+	//}
 
 
-//implement touch
-bool GameScene::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event){
-	bird->Fly();
+	//implement touch
+	bool GameScene::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event){
+		if (bird->getFalling() == false){
+			this->unschedule(schedule_selector(GameScene::StopFlying));
+			bird->Fly();
+			this->scheduleOnce(schedule_selector(GameScene::StopFlying), BIRD_FLY_DURATION);
+			CCParticleSystemQuad* p = CCParticleSystemQuad::create("jetPack.plist");
+			p->setPosition(bird->getPosX(), bird->getPosY());
+			this->addChild(p);
+			return true;
+		}
+		bird->Fly();
+		this->scheduleOnce(schedule_selector(GameScene::StopFlying), BIRD_FLY_DURATION);
 
-	this->scheduleOnce(schedule_selector(GameScene::StopFlying), BIRD_FLY_DURATION);
+		CCParticleSystemQuad* p = CCParticleSystemQuad::create("jetPack.plist");
+		p->setPosition(bird->getPosX(), bird->getPosY());
+		this->addChild(p);
 
-	return true;
-}
+		return true;
+	}
 
-//implement stop flying
+	//implement stop flying
 
-void GameScene::StopFlying(float dt)
-{
-	bird->StopFlying();
-}
+	void GameScene::StopFlying(float dt)
+	{
+		bird->StopFlying();
+	}
 
-void GameScene::update(float dt)
-{
-	bird->Fall();
-}
+	void GameScene::update(float dt)
+	{
+		bird->Fall();
+	}
