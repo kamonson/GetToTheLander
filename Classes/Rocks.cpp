@@ -17,12 +17,12 @@ void Rocks::SpawnRocks(cocos2d::Layer *layer)
 
 	//Create rocks
 
-//for testing on pc C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\
+	//for testing on pc C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\
 
 	//auto topRocks = Sprite::create("C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\Rocks.png");
 	//auto bottomRocks = Sprite::create("C:\\Users\\Kyle\\Documents\\GitHub\\GetToTheLander\\Resources\\iphone\\Rocks.png");
 
-//for running on platform
+	//for running on platform
 	auto topRocks = Sprite::create("Rocks.png");
 	auto bottomRocks = Sprite::create("Rocks.png");
 
@@ -60,11 +60,11 @@ void Rocks::SpawnRocks(cocos2d::Layer *layer)
 	topRocks->setPosition(Point(visibleSize.width + topRocks->getContentSize().width + origin.x, topRocksPosition));
 	bottomRocks->setPosition(Point(topRocks->getPositionX(), topRocksPosition - (Sprite::create("Ball.png")->getContentSize().height*ROCKS_GAP) - topRocks->getContentSize().height));
 
-	layer->addChild(topRocks,1000);
-	layer->addChild(bottomRocks,1000);
+	layer->addChild(topRocks, 1000);
+	layer->addChild(bottomRocks, 1000);
 
 	/*auto topRocksAction =  MoveBy::create(ROCKS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));*/
-	
+
 	auto topRocksAction = MoveBy::create(ROCKS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
 
 	auto bottomRocksAction = MoveBy::create(ROCKS_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));

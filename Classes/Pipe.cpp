@@ -61,7 +61,7 @@ void Pipe::SpawnPipe(cocos2d::Layer *layer)
 
 
 
-	auto pointNode = Node::create();	
+	auto pointNode = Node::create();
 	auto fuel = Sprite::create("Fuel.png");
 	pointNode->addChild(fuel);
 	auto pointBody = PhysicsBody::createBox(fuel->getContentSize());

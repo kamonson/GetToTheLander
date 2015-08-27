@@ -13,8 +13,8 @@ public:
 private:
 	cocos2d::Size visibleSize;
 	cocos2d::Vec2 origin;
-	int RockTagNum=0;
-    
+	int RockTagNum = 0;
+
 };
 
 #endif // __ROCKS_H__

@@ -26,6 +26,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Ball.pn
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\burn.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\debris.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\debris_2.plist \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\debris_3.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\Fuel.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\GameBackground.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\ipadhd\jetPack.plist \
@@ -48,6 +49,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Ball.pn
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\burn.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\debris.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\debris_2.plist \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\debris_3.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Fuel.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\GameBackground.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\jetPack.plist \
@@ -65,10 +67,12 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Splash 
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphone\Title.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Alien.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Background.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Ball - Copy.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Ball.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\burn.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\debris.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\debris_2.plist \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\debris_3.plist \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Fuel.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\GameBackground.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\jetPack.plist \
@@ -81,6 +85,7 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Play 
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Play Button.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Retry Button Clicked.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Retry Button.png \
+C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Rocks - Copy.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Rocks.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Splash Screen.png \
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\assets\iphonehd\Title.png \

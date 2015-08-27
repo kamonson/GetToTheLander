@@ -12,14 +12,14 @@
 class GameScene : public cocos2d::Layer
 {
 public:
-    // there's no 'id' in cpp, so we recommend returning the class instance pointer
-    static cocos2d::Scene* createScene();
+	// there's no 'id' in cpp, so we recommend returning the class instance pointer
+	static cocos2d::Scene* createScene();
 	void initPhysics();
-    // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
-    virtual bool init();
-    
-    // implement the "static create()" method manually
-    CREATE_FUNC(GameScene);
+	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
+	virtual bool init();
+
+	// implement the "static create()" method manually
+	CREATE_FUNC(GameScene);
 
 private:
 	void SetPhysicsWorld(cocos2d::PhysicsWorld *world) {
@@ -28,32 +28,32 @@ private:
 	void SpawnPipe(float dt);
 	void SpawnMights(float dt);
 	void SpawnRocks(float dt);
-		cocos2d::PhysicsWorld *sceneWorld;
+	cocos2d::PhysicsWorld *sceneWorld;
 
-		cpSpace* m_pSpace;
-		
-		//declare contact
-		bool onContactBegin(cocos2d::PhysicsContact &contact);
+	cpSpace* m_pSpace;
 
-		//delcare movement
-		bool onTouchBegan(cocos2d::Touch * touch, cocos2d::Event *event);
+	//declare contact
+	bool onContactBegin(cocos2d::PhysicsContact &contact);
 
-		void StopFlying(float dt);
-		void update(float dt);
+	//delcare movement
+	bool onTouchBegan(cocos2d::Touch * touch, cocos2d::Event *event);
 
-		Pipe pipe;
-		Mights mights;
-		Rocks rocks;
+	void StopFlying(float dt);
+	void update(float dt);
 
-		//initialize with pointer because it does not have defualt constructor, use constructor passing a layer
-		Bird *bird;
+	Pipe pipe;
+	Mights mights;
+	Rocks rocks;
 
-		//initialize points
-		unsigned int score;
+	//initialize with pointer because it does not have defualt constructor, use constructor passing a layer
+	Bird *bird;
 
-		cocos2d::Label *scoreLabel;
+	//initialize points
+	unsigned int score;
 
-		bool frstContact = false;
+	cocos2d::Label *scoreLabel;
+
+	bool frstContact = false;
 
 };
 
