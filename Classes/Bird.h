@@ -11,7 +11,7 @@ public:
 	//added sound inline to ensure play
 	void Fall();
 	void Fly(){
-		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Wing.mp3", 0, 1.0, 0.0, 0.5);
+		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Wing.mp3",0,1.0,0.0,0.5); 
 		isFalling = false;
 		y = flappyBird->getPositionY();
 	};
