@@ -7,31 +7,31 @@ USING_NS_CC;
 
 Scene* MainMenuScene::createScene()
 {
-    // 'scene' is an autorelease object
-    auto scene = Scene::create();
-    
-    // 'layer' is an autorelease object
-    auto layer = MainMenuScene::create();
+	// 'scene' is an autorelease object
+	auto scene = Scene::create();
 
-    // add layer as a child to scene
-    scene->addChild(layer);
+	// 'layer' is an autorelease object
+	auto layer = MainMenuScene::create();
 
-    // return the scene
-    return scene;
+	// add layer as a child to scene
+	scene->addChild(layer);
+
+	// return the scene
+	return scene;
 }
 
 // on "init" you need to initialize your instance
 bool MainMenuScene::init()
 {
-    //////////////////////////////
-    // 1. super init first
-    if ( !Layer::init() )
-    {
-        return false;
-    }
-    
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	//////////////////////////////
+	// 1. super init first
+	if (!Layer::init())
+	{
+		return false;
+	}
+
+	Size visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
 	//create a background for main menu
 	auto backgroundSprite = Sprite::create("Background.png");
@@ -54,7 +54,7 @@ bool MainMenuScene::init()
 
 	this->addChild(menu);
 
-    return true;
+	return true;
 }
 
 //implementation for switching to gamescene based on playItem button with TRANSITION_TIME speed
