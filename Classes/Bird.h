@@ -11,11 +11,15 @@ public:
 	//added sound inline to ensure play
 	void Fall();
 	void Fly(){
-		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Wing.mp3"); 
+		CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("Sounds/Wing.mp3",0,1.0,0.0,0.5); 
 		isFalling = false;
+		y = flappyBird->getPositionY();
 	};
 	void StopFlying() { isFalling = true; }
-
+	bool getFalling(){ return isFalling; }
+	void setFalling(bool fall){ isFalling = fall; };
+	float getPosX();
+	float getPosY();
 
 
 private:
@@ -27,6 +31,9 @@ private:
 	cocos2d::Sprite *flappyBird;
 
 	bool isFalling;
+
+	float x;
+	float y;
 };
 
 #endif // __BIRD_H__

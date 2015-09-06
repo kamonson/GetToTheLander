@@ -58,8 +58,13 @@ void Pipe::SpawnPipe(cocos2d::Layer *layer)
 	bottomPipe->runAction(bottomPipeAction);
 
 	//create a physics body to create points
-	auto pointNode = Node::create();
-	auto pointBody = PhysicsBody::createBox(Size(1, Sprite::create("Ball.png")->getContentSize().height * PIPE_GAP));
+
+
+
+	auto pointNode = Node::create();	
+	auto fuel = Sprite::create("Fuel.png");
+	pointNode->addChild(fuel);
+	auto pointBody = PhysicsBody::createBox(fuel->getContentSize());
 	//enable collision detection
 	pointBody->setDynamic(false);
 	pointBody->setCollisionBitmask(POINT_COLLISION_BITMASK);
@@ -73,4 +78,24 @@ void Pipe::SpawnPipe(cocos2d::Layer *layer)
 	auto pointNodeAction = MoveBy::create(PIPE_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
 
 	pointNode->runAction(pointNodeAction);
+
+
+
+
+
+	//auto pointNode = Node::create();
+	//auto pointBody = PhysicsBody::createBox(Size(1, Sprite::create("Ball.png")->getContentSize().height * PIPE_GAP));
+	////enable collision detection
+	//pointBody->setDynamic(false);
+	//pointBody->setCollisionBitmask(POINT_COLLISION_BITMASK);
+	//pointBody->setContactTestBitmask(true);
+	////set position between pipes
+	//pointNode->setPhysicsBody(pointBody);
+	//pointNode->setPosition(Point(topPipe->getPositionX(), topPipe->getPositionY() - (topPipe->getContentSize().height / 2) - ((Sprite::create("Ball.png")->getContentSize().height*PIPE_GAP) / 2)));
+
+	//layer->addChild(pointNode);
+
+	//auto pointNodeAction = MoveBy::create(PIPE_MOVEMENT_SPEED * visibleSize.width, Point(-visibleSize.width*1.5, 0));
+
+	//pointNode->runAction(pointNodeAction);
 }
