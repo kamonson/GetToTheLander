@@ -356,32 +356,7 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/Mights.o: \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCString.h \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCNotificationCenter.h \
  C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
- jni/../../Classes/Definitions.h jni/../../Classes/GameScene.h \
- jni/../../Classes/Pipe.h jni/../../Classes/Rocks.h \
- jni/../../Classes/Bird.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/audio/android/../include/Export.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/chipmunk.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/chipmunk_types.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpVect.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpBB.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpSpatialIndex.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpBody.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpShape.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpPolyShape.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpArbiter.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpConstraint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpPinJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpSlideJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpPivotJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpGrooveJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpDampedSpring.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpDampedRotarySpring.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpRotaryLimitJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpRatchetJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpGearJoint.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpSimpleMotor.h \
- C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpSpace.h
+ jni/../../Classes/Definitions.h
 
 jni/../../Classes/Mights.h:
 
@@ -1098,57 +1073,3 @@ C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/.
 C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
 jni/../../Classes/Definitions.h:
-
-jni/../../Classes/GameScene.h:
-
-jni/../../Classes/Pipe.h:
-
-jni/../../Classes/Rocks.h:
-
-jni/../../Classes/Bird.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/audio/android/../include/SimpleAudioEngine.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/audio/android/../include/Export.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/chipmunk.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/chipmunk_types.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpVect.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpBB.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpSpatialIndex.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpBody.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpShape.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpPolyShape.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpArbiter.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpConstraint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpPinJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpSlideJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpPivotJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpGrooveJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpDampedSpring.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpDampedRotarySpring.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpRotaryLimitJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpRatchetJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpGearJoint.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/constraints/cpSimpleMotor.h:
-
-C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.android\../cocos2d/cocos/./../external/chipmunk/include/chipmunk/cpSpace.h:
