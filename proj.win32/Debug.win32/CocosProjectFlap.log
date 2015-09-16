@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+﻿Build started 9/7/2015 12:00:57 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\CocosProjectFlap.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug.win32\) contains files shared from another project (CocosProjectFlap.vcxproj, Flap.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\audio\include" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external" /I"C:\Cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk" /I"C:\Cocos\frameworks\cocos2d-x-3.6\extensions" /I..\Classes /I.. /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\frameworks\cocos2d-x-3.6\cocos\2d\..\..\external\freetype2\include\win32\\" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp ..\Classes\Bird.cpp ..\Classes\GameOverScene.cpp ..\Classes\GameScene.cpp ..\Classes\MainMenuScene.cpp ..\Classes\Mights.cpp ..\Classes\Pipe.cpp ..\Classes\Rocks.cpp ..\Classes\SplashScene.cpp main.cpp
+         AppDelegate.cpp
+         Bird.cpp
+         GameOverScene.cpp
+         GameScene.cpp
+         MainMenuScene.cpp
+         Mights.cpp
+         Pipe.cpp
+         Rocks.cpp
+     1>c:\users\kyle\documents\github\gettothelander\classes\mights.cpp(34): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\kyle\documents\github\gettothelander\classes\pipe.cpp(28): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\kyle\documents\github\gettothelander\classes\mights.cpp(37): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\kyle\documents\github\gettothelander\classes\pipe.cpp(31): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\chipmunk.h(26): warning C4005: '_USE_MATH_DEFINES' : macro redefinition (..\Classes\GameOverScene.cpp)
+                 command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\chipmunk.h(26): warning C4005: '_USE_MATH_DEFINES' : macro redefinition (..\Classes\MainMenuScene.cpp)
+                 command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\chipmunk.h(26): warning C4005: '_USE_MATH_DEFINES' : macro redefinition (..\Classes\GameScene.cpp)
+                 command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\chipmunk.h(26): warning C4005: '_USE_MATH_DEFINES' : macro redefinition (..\Classes\Rocks.cpp)
+                 command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\MainMenuScene.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\Rocks.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\MainMenuScene.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameOverScene.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\Rocks.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameOverScene.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameScene.cpp)
+     1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameScene.cpp)
+     1>c:\users\kyle\documents\github\gettothelander\classes\rocks.cpp(35): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\kyle\documents\github\gettothelander\classes\rocks.cpp(38): warning C4305: '=' : truncation from 'double' to 'float'
+=======
 ﻿Build started 8/14/2015 1:46:32 AM.
      1>Project "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\CocosProjectFlap.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug.win32\) contains files shared from another project (CocosProjectFlap.vcxproj, Flap.vcxproj).  This can lead to incorrect clean and rebuild behavior.
@@ -9,17 +46,21 @@
                  command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameOverScene.cpp)
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameOverScene.cpp)
+>>>>>>> parent of b0228d0... Little Fixes
      1>c:\users\kyle\documents\github\gettothelander\classes\gameoverscene.cpp(62): warning C4018: '>' : signed/unsigned mismatch
      1>c:\users\kyle\documents\github\gettothelander\classes\gameoverscene.cpp(71): warning C4996: 'cocos2d::LabelTTF::create': was declared deprecated
                  c:\cocos\frameworks\cocos2d-x-3.6\cocos\2d\cclabelttf.h(83) : see declaration of 'cocos2d::LabelTTF::create'
      1>c:\users\kyle\documents\github\gettothelander\classes\gameoverscene.cpp(77): warning C4996: 'cocos2d::LabelTTF::create': was declared deprecated
                  c:\cocos\frameworks\cocos2d-x-3.6\cocos\2d\cclabelttf.h(83) : see declaration of 'cocos2d::LabelTTF::create'
+<<<<<<< HEAD
+=======
          GameScene.cpp
          MainMenuScene.cpp
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\chipmunk.h(26): warning C4005: '_USE_MATH_DEFINES' : macro redefinition (..\Classes\GameScene.cpp)
                  command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameScene.cpp)
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\GameScene.cpp)
+>>>>>>> parent of b0228d0... Little Fixes
      1>c:\users\kyle\documents\github\gettothelander\classes\gamescene.cpp(122): warning C4996: 'cocos2d::CCParticleSystemQuad': was declared deprecated
                  c:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(742) : see declaration of 'cocos2d::CCParticleSystemQuad'
                  c:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(742) : see declaration of 'cocos2d::CCParticleSystemQuad'
@@ -33,6 +74,12 @@
      1>c:\users\kyle\documents\github\gettothelander\classes\gamescene.cpp(236): warning C4305: 'argument' : truncation from 'double' to 'float'
      1>c:\users\kyle\documents\github\gettothelander\classes\gamescene.cpp(238): warning C4996: 'cocos2d::CCParticleSystemQuad': was declared deprecated
                  c:\cocos\frameworks\cocos2d-x-3.6\cocos\deprecated\ccdeprecated.h(742) : see declaration of 'cocos2d::CCParticleSystemQuad'
+<<<<<<< HEAD
+         SplashScene.cpp
+         main.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug.win32\Get To The Lander.res" "Get To The Lander.rc" 
+=======
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\chipmunk.h(26): warning C4005: '_USE_MATH_DEFINES' : macro redefinition (..\Classes\MainMenuScene.cpp)
                  command-line arguments :  see previous definition of '_USE_MATH_DEFINES'
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(105): warning C4056: overflow in floating-point constant arithmetic (..\Classes\MainMenuScene.cpp)
@@ -51,16 +98,18 @@
      1>c:\cocos\frameworks\cocos2d-x-3.6\external\chipmunk\include\chipmunk\cpbb.h(111): warning C4056: overflow in floating-point constant arithmetic (..\Classes\Rocks.cpp)
      1>c:\users\kyle\documents\github\gettothelander\classes\rocks.cpp(35): warning C4305: '=' : truncation from 'double' to 'float'
      1>c:\users\kyle\documents\github\gettothelander\classes\rocks.cpp(38): warning C4305: '=' : truncation from 'double' to 'float'
+>>>>>>> parent of b0228d0... Little Fixes
        PreLinkEvent:
          if not exist "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\" mkdir "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\"
          xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.6\prebuilt\win32\*.*" "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\"
          xcopy "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\..\Resources" "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\" /D /E /I /F /Y
          
          :VCEnd
-         53 File(s) copied
+         File not found - *.*
+         0 File(s) copied
          0 File(s) copied
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\ /LIBPATH:C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libpng.lib libjpeg.lib libtiff.lib libwebp.lib libiconv.lib glfw3.lib freetype250.lib winmm.lib ws2_32.lib libchipmunk.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.lib" /MACHINE:X86 /SAFESEH "Debug.win32\Get To The Lander.res"
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\ /LIBPATH:C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libpng.lib libjpeg.lib libtiff.lib libwebp.lib libiconv.lib glfw3.lib freetype250.lib winmm.lib ws2_32.lib libchipmunk.lib libbox2d.lib libSpine.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.lib" /MACHINE:X86 /SAFESEH "Debug.win32\Get To The Lander.res"
          Debug.win32\AppDelegate.obj
          Debug.win32\Bird.obj
          Debug.win32\GameOverScene.obj
@@ -71,9 +120,13 @@
          Debug.win32\Rocks.obj
          Debug.win32\SplashScene.obj
          Debug.win32\main.obj
-         CocosProjectFlap.vcxproj -> C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\Debug.win32\Get To The Lander.exe
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\CocosProjectFlap.vcxproj" (Build target(s)).
+     1>LINK : fatal error LNK1104: cannot open file 'libbox2d.lib'
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\GetToTheLander\proj.win32\CocosProjectFlap.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
+<<<<<<< HEAD
+Time Elapsed 00:00:32.92
+=======
 Time Elapsed 00:01:13.55
+>>>>>>> parent of b0228d0... Little Fixes
