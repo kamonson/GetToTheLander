@@ -21,9 +21,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
 				   ../../Classes/Bird.cpp \
 				   ../../Classes/GameOverScene.cpp \
 				   ../../Classes/Rocks.cpp \
-
 				   
-
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
 # _COCOS_HEADER_ANDROID_BEGIN

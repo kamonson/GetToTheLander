@@ -2,7 +2,7 @@
 #include "SplashScene.h"
 
 // is the game landscape or portrait (true for landscape and false for portrait)
-#define IS_LANDSCAPE false
+#define IS_LANDSCAPE true
 
 USING_NS_CC;
 
@@ -20,6 +20,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLViewImpl::create("Get To The Lander");
+		//set glview to phone size for better testing (320,480) for phone
+		glview->setFrameSize(480, 320);
         director->setOpenGLView(glview);
     }
     
